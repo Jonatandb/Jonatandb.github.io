@@ -87,7 +87,7 @@ a {
 
 @media screen and (min-width: 800px) {
   .content {
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     justify-content: space-evenly;
     padding: 4rem;
