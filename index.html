@@ -12,6 +12,21 @@
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" type="text/css" href="css/animations.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP4CD6XRYK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'G-ZP4CD6XRYK')
+    gtag('referrer', document.referrer)
+    function trackEvent(action, category = "Interaction", label, value) {
+      gtag("event", action, {
+        event_category: category,
+        event_label: label,
+        value: value
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -38,23 +53,24 @@
           </p>
         </div>
         <div class="contact">
-          <a class="button" href="mailto:jonatandb@gmail.com">
+          <a class="button" href="mailto:jonatandb@gmail.com" onclick="trackEvent('ButtonClicked_GetInTouch');">
             Get in touch
           </a>
         </div>
         <ul class="social">
           <li>
-            <a href="https://twitter.com/jonatandb" target="_blank">
+            <a href="https://twitter.com/jonatandb" target="_blank" onclick="trackEvent('ButtonClicked_Twitter');">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/Jonatandb" target="_blank">
+            <a href="https://github.com/Jonatandb" target="_blank" onclick="trackEvent('ButtonClicked_Github');">
               <i class="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jonatandb/" target="_blank">
+            <a href="https://www.linkedin.com/in/jonatandb/" target="_blank"
+              onclick="trackEvent('ButtonClicked_Linkedin');">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -65,12 +81,13 @@
 
         <hr class="hr" />
 
-
         <p class="projects-items">
           🩸MiPresion:
-          <a href="https://jonatandb.dev.ar/MiPresion" target="_blank">Website</a>
+          <a href="https://jonatandb.dev.ar/MiPresion/" target="_blank"
+            onclick="trackEvent('LinkClicked_MiPresion')">Website</a>
           /
-          <a href="https://github.com/Jonatandb/" target="_blank">
+          <a href="https://github.com/Jonatandb/MiPresion" target="_blank"
+            onclick="trackEvent('LinkClicked_MiPresion_repo')">
             <i class="fab fa-github"></i>
           </a>
         </p>
@@ -79,91 +96,44 @@
 
         <p class="projects-items">
           Grace - Mi arte:
-          <a href="https://mi-arte-jonatandb.vercel.app/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
+          <a href="https://mi-arte-jonatandb.vercel.app/" target="_blank"
+            onclick="trackEvent('LinkClicked_Grace_Mi_arte')">Website</a>
         </p>
         <p class="project-tags">react nextjs sass firebase whatsapp-integration</p>
 
 
         <p class="projects-items">
-          WeatherApp:
-          <a href="https://weatherapp-jdb.vercel.app/" target="_blank">Demo</a> /
-          <a href="https://github.com/Jonatandb/weather-app-with-fastify" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">react nodejs fastify swagger dotenv jest</p>
-
-        <p class="projects-items">
-          GiffyDb:
-          <a href="https://giffydb.vercel.app/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/giffydb" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">react wouter intersection-observer</p>
-
-        <p class="projects-items">
-          LinksAdmin:
-          <a href="https://jonatandb.github.io/LinksAdmin/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/LinksAdmin" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">react react-toastify bootswatch firebase</p>
-
-        <p class="projects-items">
-          Petgram:
-          <a href="https://petgram-jdb.vercel.app/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/ReactAvanzadoPlatzi" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">
-          nodejs express graphql bcrypt react styled-components
-        </p>
-
-        <p class="projects-items">
-          JDevter:
-          <a href="https://jdevter.vercel.app/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/jdevter" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">react nextjs firebase firebase-admin</p>
-
-        <p class="projects-items">
-          BB quotes:
-          <a href="https://jonatandb.github.io/breaking_bad_random_quotes/" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/breaking_bad_random_quotes" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </p>
-        <p class="project-tags">react react-hooks</p>
-
-        <p class="projects-items">
           LoginsAdmin:
-          <a href="https://github.com/Jonatandb/LoginsAdmin-Xamarin-" target="_blank">Demo</a>
-          /
-          <a href="https://github.com/Jonatandb/LoginsAdmin-Xamarin-" target="_blank">
+          <a href="https://github.com/Jonatandb/LoginsAdmin-Xamarin-" target="_blank"
+            onclick="trackEvent('LinkClicked_LoginsAdmin_repo')">
             <i class="fab fa-github"></i>
           </a>
         </p>
         <p class="project-tags">android xamarin-forms c# sqlite</p>
 
         <p class="projects-items">
+          WeatherApp:
+          <a href="https://weatherapp-jdb.vercel.app/" target="_blank"
+            onclick="trackEvent('LinkClicked_WeatherApp')">Website</a> /
+          <a href="https://github.com/Jonatandb/weather-app-with-fastify" target="_blank"
+            onclick="trackEvent('LinkClicked_WeatherApp_repo')">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <p class="project-tags">react nodejs fastify swagger dotenv jest</p>
+
+
+        <h3 class="projects-subtitle">Some practice projects:</h3>
+
+        <hr class="hr" />
+
+        <p class="projects-items">
           Game of life:
-          <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida#JuegoDeLaVida.py" target="_blank">Demo</a>
+          <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida#JuegoDeLaVida.py" target="_blank"
+            onclick="trackEvent('LinkClicked_GameOfLife')">Website</a>
           /
-          <a href="https://github.com/Jonatandb/DotCSV-Juego-de-la-vida" target="_blank">
+          <a href="https://github.com/Jonatandb/DotCSV-Juego-de-la-vida" target="_blank"
+            onclick="trackEvent('LinkClicked_GameOfLife_repo')">
             <i class="fab fa-github"></i>
           </a>
         </p>
@@ -171,13 +141,62 @@
 
         <p class="projects-items">
           Memory Game:
-          <a href="https://memory-game-jonatandb.vercel.app/" target="_blank">Demo</a>
+          <a href="https://memory-game-jonatandb.vercel.app/" target="_blank"
+            onclick="trackEvent('LinkClicked_MemoryGame')">Website</a>
           /
-          <a href="https://github.com/Jonatandb/memory-game" target="_blank">
+          <a href="https://github.com/Jonatandb/memory-game" target="_blank"
+            onclick="trackEvent('LinkClicked_MemoryGame_repo')">
             <i class="fab fa-github"></i>
           </a>
         </p>
-        <p class="project-tags">react html css javascript es6</p>
+        <p class="project-tags">desktop-webapp react html css javascript es6</p>
+
+        <p class="projects-items">
+          GiffyDb:
+          <a href="https://giffydb.vercel.app/" target="_blank" onclick="trackEvent('LinkClicked_GiffyDb')">Website</a>
+          /
+          <a href="https://github.com/Jonatandb/giffydb" target="_blank"
+            onclick="trackEvent('LinkClicked_GiffyDb_repo')">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <p class="project-tags">react wouter intersection-observer</p>
+
+        <p class="projects-items">
+          LinksAdmin:
+          <a href="https://jonatandb.github.io/LinksAdmin/" target="_blank"
+            onclick="trackEvent('LinkClicked_LinksAdmin')">Website</a>
+          /
+          <a href="https://github.com/Jonatandb/LinksAdmin" target="_blank"
+            onclick="trackEvent('LinkClicked_LinksAdmin_repo')">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <p class="project-tags">react react-toastify bootswatch firebase</p>
+
+        <p class="projects-items">
+          BB quotes:
+          <a href="https://jonatandb.github.io/breaking_bad_random_quotes/" target="_blank"
+            onclick="trackEvent('LinkClicked_BBQuotes')">Website</a>
+          /
+          <a href="https://github.com/Jonatandb/breaking_bad_random_quotes" target="_blank"
+            onclick="trackEvent('LinkClicked_BBQuotes_repo')">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <p class="project-tags">react react-hooks</p>
+
+        <p class="projects-items">
+          Petgram:
+          <a href="https://petgram-jdb.vercel.app/" target="_blank"
+            onclick="trackEvent('LinkClicked_Petgram')">Website</a>
+          /
+          <a href="https://github.com/Jonatandb/ReactAvanzadoPlatzi" target="_blank"
+            onclick="trackEvent('LinkClicked_Petgram_repo')">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <p class="project-tags">mobile-first nodejs express graphql bcrypt react styled-components</p>
 
       </section>
     </main>

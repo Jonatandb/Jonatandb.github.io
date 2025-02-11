@@ -139,6 +139,13 @@ a {
   padding-top: 15%;
 }
 
+.projects-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+  padding-top: 15%;
+}
+
 .projects-items {
   color: #ffe479;
   font-size: 0.75rem;
